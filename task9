@@ -1,0 +1,13 @@
+public class Main {
+    public static boolean isDigits(String s) {
+        for (char c : s.toCharArray()) {
+            if (!Character.isDigit(c)) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isDigits("123456"));
+        System.out.println(isDigits("123a12"));
+    }
+}
